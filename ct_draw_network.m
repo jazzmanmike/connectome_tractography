@@ -1,7 +1,7 @@
-function ct_draw_connectome( network, xyz )
-%CT_Draw_Connectome Draws a connectome
+function ct_draw_network( network, xyz )
+%CT_Draw_Network Draws a connectome
 %
-%   ct_draw_connectome(network, xyz);
+%   ct_draw_network(network, xyz);
 %
 %   Inputs: network,    corresponding network matrix
 %           xyz,        Euclidean co-ordinates  
@@ -94,7 +94,7 @@ subplot_2 = subplot(1, 2, 2, 'Parent', figure1);
 hold(subplot_2, 'on');
 for iEdge = 1:nEdges
     plot(X(:,iEdge), Y(:,iEdge), 'LineWidth', ceil(0.1+W(iEdge)/10), 'Color', cmap(ceil(W(iEdge)),:));
-    hold on
+    hold on    
 end
 
 set(gca,'visible','off'); 
