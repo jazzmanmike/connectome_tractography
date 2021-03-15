@@ -9,7 +9,7 @@
  
  To get the above either use tract_van.sh for processing of tractrography data or alternatively just use your own data. 
  
- To start just need to enter the patient path in section A1.
+ To start you just need to enter patient path data in section A1.
 
             %% A1. Load data
 
